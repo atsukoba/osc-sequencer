@@ -39,6 +39,14 @@ optional arguments:
   -V, --verbose         verbose output
 ```
 
+#### run example
+
+```shell
+$ python osc_sequencer.py record --ip 127.0.0.1 --port 8888 --addresses /dest1 /dest2 /dest3 --record_duration 30
+INFO: Serving on ('127.0.0.1', 8888)
+ 22%|█████████████▏                                              | 22/100 [00:06<00:23,  3.30it/s]
+```
+
 ### PLayback
 
 ```text
@@ -54,10 +62,10 @@ optional arguments:
   -V, --verbose  verbose output
 ```
 
-### run example
+#### run example
 
 ```shell
 cd osc-sequencer/
---> python osc_sequencer.py playback ./data/example.json --port 4000
+$ python osc_sequencer.py playback ./data/example.json --port 4000
 Sending OSC Messages...:  66%|███████████████████████▊            | 39/59 [00:05<00:02,  6.67it/s]
 ```
